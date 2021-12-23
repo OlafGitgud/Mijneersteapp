@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function sum(){
+            var number1 = Number(document.getElementById("num1").value);
+            var number2 = Number(document.getElementById("num2").value);
+                                             
+            // Tel bij elkaar op
+            var sum = number1 + number2;
+
+            // zet antwoord neer
+            var answer = document.getElementById("antwoord").value;
+            antwoord.innerText = sum;
+        }
+
+        function multiply(){
+            var number1 = Number(document.getElementById("num1").value);
+            var number2 = Number(document.getElementById("num2").value);
+                                             
+            // Tel bij elkaar op
+            var multiply = number1 * number2;
+          
+            // zet antwoord neer
+            var answer = document.getElementById("antwoord").value;
+            antwoord.innerText = multiply ;
+        }
+        function divide(){
+            var number1 = Number(document.getElementById("num1").value);
+            var number2 = Number(document.getElementById("num2").value);
+                                             
+            // Tel bij elkaar op
+            var divide = number1 / number2;
+          
+            // zet antwoord neer
+            var answer = document.getElementById("antwoord").value;
+            antwoord.innerText = divide ;
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Rekenmachine</h1>
+
+    <input id="num1" type = "number">
+    <input id="num2" type = "number">
+    <br>
+    <span>The answer is: </span><span id= "antwoord"></span>
+    <br>
+    <button type="button" onclick="sum()">  +    </button>
+    <button type="button" onclick="multiply()">    X    </button>
+    <button type="button" onclick="divide ()">    /    </button>
+    <br>
+</body>
+</html>
